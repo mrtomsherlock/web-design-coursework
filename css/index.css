@@ -1,0 +1,85 @@
+.frontpage-img{
+ 
+  height: 100%;
+  background-size: cover;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  background-position: top;
+  filter: grayscale(75%) brightness(70%);
+}
+entrsitebtn{
+  float: right;
+}
+.pagecontent{
+  margin-top:5vh;
+}
+.logotext{
+  font-family: 'Nunito Sans', sans-serif;
+  background-color: rgb(99,157,159);
+  font-size: 5vw;
+  Padding: 10px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+color: white;
+}
+.navcontainer{
+  height: 10vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: white;
+}
+.navbutton{
+  float: right;
+  margin-right: 2vw;
+  font-size: xx-large;
+  color: rgb(165,203,91);
+}
+.findoutmr{
+  font-size: 2vw;
+  color: rgb(165,203,91);
+  border: rgb(165,203,91);
+  border-style: solid;
+  padding: 6px;
+  margin-top: 8vh;
+}
+.bottomnav{
+position: fixed;
+bottom: 0;
+left: 0;
+width: 100%;
+}
+
+@keyframes sliding {
+  0% {left: 0%; }
+  40%{left:0%;}
+  50% {left: -100%; }
+  90%{left:-100%;}
+  100% {left: 0; }
+}
+.slide {
+    display: inline-block;
+    position: relative;
+    width: 50%;
+    height: 100%;    
+    background-position: center center;
+    background-size: cover;
+    float: left;
+}
+.slider {
+    animation: sliding 25s ease-out 0s backwards infinite;
+    width: 200%;
+    height: 100%;
+    position:absolute;
+}
+
+@media (max-width: 480px) {
+  .logotext{
+    font-size: xx-large;
+  }
+  .findoutmr{
+    margin-top: 14vh;
+    font-size: large;
+  }
+}

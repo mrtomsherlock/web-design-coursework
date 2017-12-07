@@ -1,0 +1,61 @@
+
+.glyphicon-large{
+  font-size: 80px;
+}
+body{
+    font-family: 'Nunito Sans', sans-serif!important;
+}
+.navcontainer{
+  height: 10vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: white;
+}
+.pageeven{
+  height: 90vh;
+  background-color: rgb(99,157,159);
+  display: flex;
+}
+.pageeventext{
+    margin-right: 5%;
+  }
+  .pageodd{
+    height: 100vh;
+    background-color: #7485AF;
+    display: flex;
+    align-items: center;
+  }
+  .pageoddtext{
+      float: left;
+      margin-left: 10%;
+      text-align: right;
+    }
+.title{
+  color: white;
+  font-size: 3.5vw;
+}
+.content{
+  color:white;
+  font-weight: 200;
+  font-size: large;
+}
+.navbutton{
+
+  float: right;
+  margin-right: 2vw;
+  font-size: xx-large;
+  color: rgb(165,203,91);
+}
+.downarrow{
+    font-size: 63pt;
+    color: white;
+    position: absolute!important;
+    top: 90%!important;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.textcontainer{
+    align-items: center;
+    display: flex;
+}

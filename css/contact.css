@@ -1,0 +1,45 @@
+.navcontainer {
+  height: 10vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: white;
+}
+
+.navbutton {
+  float: right;
+  margin-right: 2vw;
+  font-size: xx-large;
+  color: rgb(165, 203, 91);
+}
+.title {
+  text-align: center;
+  font-size: -webkit-xxx-large!important;
+  font-size: xx-large;
+}
+.button {
+  font-size: 1.5vw!important;
+  color: #639d9f!important;
+  border: #639d9f!important;
+  border-style: solid!important;
+  background: none!important;
+  -webkit-appearance: none!important;
+  padding: 6px;
+  margin-top: 8vh;
+  text-align: center;
+  cursor: pointer;
+}
+
+#buttonHelp {
+  padding-top: 10px;
+}
+
+@media (max-width: 480px) {
+  .logotext {
+    font-size: xx-large;
+  }
+  .findoutmr {
+    margin-top: 14vh;
+    font-size: large;
+  }
+}

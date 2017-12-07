@@ -1,0 +1,16 @@
+
+.bottomnav {
+  background-color: #51AE57;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  min-height:20vh;
+}
+
+.notfooter{
+  min-height:79.4vh;
+}
+
+#formMain {
+  padding: 20px;
+}

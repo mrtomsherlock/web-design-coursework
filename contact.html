@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <!-- metadata about the page -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Degree Aprenticeships">
+  <meta name="author" content="Jamie Meininger & Tom Sherlock">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Nunito+Sans:600" rel="stylesheet">
+  <!-- icon shown in the browser window for the website -->
+  <link href="res/favicon.png" rel="icon">
+
+  <!-- This is the page title-->
+  <title>Contact Us | Degree Apprenticeships</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Specific CSS for the contact page -->
+  <link href="css/contact.css" rel="stylesheet">
+
+  <!-- Specific CSS for the footer -->
+  <link href="css/footer.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="notfooter">
+    <!-- "navbar" style top bar -->
+    <div class="navcontainer">
+
+      <a href="menu.html" class="navbutton">
+        <span class="glyphicon glyphicon-menu-hamburger"></span>
+      </a>
+    </div>
+    <!-- end top bar -->
+    <!-- this is the container for the form-->
+    <div class="container" id="formMain">
+      <div class="title">
+        <h1 style="font-size: inherit">Contact Us</h1></div>
+      <h4>If you have any questions about Degree Apprenticeships, please let us know using the form below</h4>
+      <form>
+        <div class="row">
+          <div class="col">
+            <!-- first name entry on form-->
+            <label for="firstName" class="col-form-label">First Name</label>
+            <input type="text" class="form-control" id="firstName" placeholder="Joe">
+          </div>
+          <div class="col">
+            <!-- last name entry on form-->
+            <label for="lastName" class="col-form-label">Last Name</label>
+            <input type="text" class="form-control" id="lastName" placeholder="Bloggs">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <!-- title entry on form-->
+            <label for="title" class="col-form-label">Preferred Title</label>
+            <input type="text" class="form-control" id="title" placeholder="Rev.">
+          </div>
+          <div class="col">
+            <!-- E-mail address name entry on form-->
+            <label for="email" class="col-form-label">Email Address</label>
+            <input type="email" class="form-control" id="email" placeholder="joe.bloggs@mail.com">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+        </div>
+        <div class="form-group">
+          <!-- enquirey text entry on form-->
+          <label for="enquiryBody">What's your enquiry?</label>
+          <textarea class="form-control" id="enquiryBody" rows="8" placeholder="Dear Degree Apprenticeships... I want to be a plumber, can you help?"></textarea>
+        </div>
+        <div class="form-group row" style="text-align:center">
+          <div class="col-sm-12">
+            <a onclick="switchVisible();" class="button">Submit Enquiry</a>
+            <!-- this button has the js function to turn on/off -->
+            <small id="buttonHelp" class="form-text text-muted">We'll respond in 5 days</small>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- end of form container -->
+
+    <div class="container" id="submitDiv" style="display: none;">
+      <br>
+      <br>
+      <div class="row">
+        <h4>Thanks for the message! We'll be in touch as soon as possible!</h4>
+      </div>
+      <div class="row">
+        <a onclick="switchVisible();" class="button">Make another Enquiry</a>
+        <!-- this button also has the js function to turn on/off -->
+      </div>
+    </div>
+  </div>
+  <!-- bottom navbar (footer) -->
+  <div class=" text-white bottomnav">
+    <div class="container text-center">
+      <div class="row">
+        <div class="p-4 col-md-4">
+          <!-- left column in footer -->
+          <h2 class="mb-4">Degree Apprenticeships</h2>
+          <p class="text-white">Your future in your hands - great job, great pay, and a great education</p>
+        </div>
+        <div class="p-4 col-md-4">
+          <!-- middle column in footer -->
+          <h2 class="mb-4">Site Map</h2>
+          <div class="row">
+            <div class="col-xs-6">
+              <a href="index.html" class="text-white">Home</a>
+            </div>
+            <div class="col-xs-6">
+              <a href="about.html" class="text-white">About</a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6">
+              <a href="caseStudies.html" class="text-white">Case Studies</a>
+            </div>
+            <div class="col-xs-6">
+              <a href="schemes.html" class="text-white">Schemes</a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6">
+              <a href="contact.html " class="text-white">Contact Us</a>
+            </div>
+            <div class="col-xs-6">
+              <a href="menu.html" class="text-white">Menu</a>
+            </div>
+          </div>
+        </div>
+        <div class="p-4 col-md-4">
+          <!-- left column in footer -->
+          <h2 class="mb-4">Contact</h2>
+          <p>
+            <a href="tel:1234-567-89" class="text-white"><span class="glyphicon glyphicon-earphone"></span> 1234-567-89</a>
+          </p>
+          <p>
+            <a href="mailto:info@degreeapprenticeships.com" class="text-white"><span class="glyphicon glyphicon-envelope"></span>info@degreeapprenticeships.com</a>
+          </p>
+          <p>
+            <a href="http://instagram.com" class="text-white" target="_blank"><span class="glyphicon glyphicon-comment"></span> @DegreeApprenticeships</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end footer html -->
+
+  <!-- dump scripts at the bottom to load the site faster - (the content will load before CSS. See this reference https://teamtreehouse.com/community/best-practice-where-to-include-your-script-tags) -->
+  <script>
+    // this function is called on a button press and offers the user a submitted message
+    function switchVisible() {
+      if (document.getElementById('formMain')) {
+        if (document.getElementById('formMain').style.display == 'none') {
+          document.getElementById('formMain').style.display = 'block';
+          document.getElementById('submitDiv').style.display = 'none';
+        } else {
+          document.getElementById('formMain').style.display = 'none';
+          document.getElementById('submitDiv').style.display = 'block';
+        }
+      }
+    }
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</body>
+
+</html>

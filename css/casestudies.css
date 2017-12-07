@@ -1,0 +1,130 @@
+.navcontainer{
+  height: 10%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.notfooter {
+    height: 79.4vh!important;
+  }
+.navbutton{
+  float: right;
+  margin-right: 2vw;
+  font-size: xx-large;
+  color: rgb(165,203,91);
+}
+.profilebar{
+  height: 37vh;
+  border-top-style: solid;
+  position: absolute;
+  bottom: 0;
+  border-top-width: 3vh;
+  border-top-color: rgb(165,203,91);
+}
+.profilepiccont{
+  position: absolute;
+width: 10%;
+padding-left: 20px;
+top: 8%;
+background-color: rgba(255,255,255,0.8);
+}
+.profilepic{
+  transition: all .2s ease-in-out;
+width: 96%;
+padding-bottom: 10px;
+}
+.profilepic:hover{
+  transform: scale(1.1);
+}
+.profileinfocont{
+  height: 90%;
+  float: left;
+  width:40%;
+}
+.timelinecont{
+  height:100%;
+}
+.profile{
+  width: 60%;
+  height: 80%;
+  margin-top:4%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50px;
+  box-shadow: 0px 0px 10px #888888;
+}
+.timeline{
+  height: 100%;
+overflow-y: hidden;
+overflow-x: scroll;
+}
+.timescroll{
+  height:10%;
+  padding-top: 5%;
+}
+.timelinedummyimg{
+    height: 70%;
+    width: 246%;
+    background-image: url(../res/timeline.jpg);
+    background-size: contain;
+    margin-top: 10%;
+}
+.profilecardhead{
+  height:40%;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  background-color: rgb(165,203,91);
+}
+.profilebio{
+  font-size: medium;
+margin-top: 14%;
+font-family: 'Nunito Sans', sans-serif;
+margin-right: 8%;
+margin-left: 8%;
+}
+.profilecardimg{
+  height:100%;
+  float:left;
+  margin-left: 10%;
+  margin-top:10%;
+  border-style: solid;
+border-color: white;
+border-width: 7px;
+}
+.profileitemlabel{
+  width:40%;
+}
+.profileitemcontent{
+  width:60%;
+}
+.profilecardtitle{
+  float:left;
+  margin-top:10%;
+  margin-left:10%;
+  color:white;
+  font-size: x-large;
+}
+.mystorytext{
+  position: absolute;
+  margin-left: 16%;
+  font-size: 261pt;
+  opacity: 0.1;
+}
+::-webkit-scrollbar {
+      height: 20px;
+}
+::-webkit-scrollbar-track {
+      background-color: rgb(165,203,91);
+} /* the new scrollbar will have a flat appearance with the set background color */
+
+::-webkit-scrollbar-thumb {
+      background-color: rgba(0, 0, 0, 0.2);
+} /* this will style the thumb, ignoring the track */
+
+::-webkit-scrollbar-button {
+      background-color: rgb(165,203,91);
+} /* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
+
+::-webkit-scrollbar-corner {
+      background-color: black;
+}

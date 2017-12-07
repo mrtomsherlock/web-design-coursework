@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <!-- metadata about the page -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Degree Aprenticeships">
+  <meta name="author" content="Jamie Meininger & Tom Sherlock">
+
+  <!-- import the googlefont for this webpage -->
+  <!-- Nunito Sans is importeded with 3 different weightinsgs 200,400 and 600 -->
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Nunito+Sans:200,400,600" rel="stylesheet">
+
+  <!-- icon shown in the browser window for the website -->
+  <link href="res/favicon.png" rel="icon">
+
+  <!-- This is the page title-->
+  <title>Available Schemes | Degree Apprenticeships</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Specific CSS for the schemes page -->
+  <link href="css/schemes.css" rel="stylesheet">
+
+  <!-- Specific CSS for the footer -->
+  <link href="css/footer.css" rel="stylesheet">
+
+  <!-- import the JS needed to create the dummy mindmap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gojs/1.8.3/go.js"></script>
+  <script src="https://gojs.net/latest/samples/icons.js"></script>
+  <!-- The script is located in the /js folder under the mindmap.js file -->
+  <script src="js/mindmap.js" id="code"></script>
+
+</head>
+
+<body onload="init()">
+  <div class="notfooter">
+    <!-- "navbar" style top bar -->
+    <div class="navcontainer">
+      <a href="menu.html" class="navbutton">
+        <span class="glyphicon glyphicon-menu-hamburger"></span>
+      </a>
+    </div>
+    <!-- end top bar -->
+
+
+    <div class="container-fluid" style="height:80vh;">
+      <div class="mindmapcont">
+        <div id="mindMap" style="height:100%; position: relative;">
+          <!-- This is where the go.js mindmap goes -->
+        </div>
+      </div>
+      <div id="instructioncont" class="row ">
+        <!-- This is the container for the instruction on how to use the mindmap -->
+        <div id="instructions" class="col-md-3 instructions">
+          <h2 class="text-center">Available Schemes</h2>
+          <br>
+          <ul>
+            <li>To use the mindmap, click and drag to find your way around</li>
+            <li>Start in the center, and follow the blue arrows to a relevant industry</li>
+            <li>Follow the red lines out to a relevant company</li>
+            <li>Click on an individual company to view more information about them</li>
+          </ul>
+          <h2 class="text-center">Other Information</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <!-- This is the toggle to show/hide the instruction on how to use the mindmap -->
+        <div id="instructiontoggle" class="instructionhide">
+          <p id="toggle">
+            ^
+          </p>
+        </div>
+      </div>
+      <!-- This is where zoom and pan controls would be placed-->
+      <div class="controls">
+        <p class="dummycontrols">
+          controls
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- bottom navbar (footer) -->
+  <div class=" text-white bottomnav">
+    <div class="container text-center">
+      <div class="row">
+        <div class="p-4 col-md-4">
+          <!-- left column in footer -->
+          <h2 class="mb-4">Degree Apprenticeships</h2>
+          <p class="text-white">Your future in your hands - great job, great pay, and a great education</p>
+        </div>
+        <div class="p-4 col-md-4">
+          <!-- middle column in footer -->
+          <h2 class="mb-4">Site Map</h2>
+          <div class="row">
+            <div class="col-xs-6">
+              <a href="index.html" class="text-white">Home</a>
+            </div>
+            <div class="col-xs-6">
+              <a href="about.html" class="text-white">About</a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6">
+              <a href="caseStudies.html" class="text-white">Case Studies</a>
+            </div>
+            <div class="col-xs-6">
+              <a href="schemes.html" class="text-white">Schemes</a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6">
+              <a href="contact.html " class="text-white">Contact Us</a>
+            </div>
+            <div class="col-xs-6">
+              <a href="menu.html" class="text-white">Menu</a>
+            </div>
+          </div>
+        </div>
+        <div class="p-4 col-md-4">
+          <!-- left column in footer -->
+          <h2 class="mb-4">Contact</h2>
+          <p>
+            <a href="tel:1234-567-89" class="text-white"><span class="glyphicon glyphicon-earphone"></span> 1234-567-89</a>
+          </p>
+          <p>
+            <a href="mailto:info@degreeapprenticeships.com" class="text-white"><span class="glyphicon glyphicon-envelope"></span>info@degreeapprenticeships.com</a>
+          </p>
+          <p>
+            <a href="http://instagram.com" class="text-white" target="_blank"><span class="glyphicon glyphicon-comment"></span> @DegreeApprenticeships</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end footer html -->
+
+
+  <!-- dump scripts at the bottom to load the site faster - (the content will load before CSS. See this reference https://teamtreehouse.com/community/best-practice-where-to-include-your-script-tags) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script>
+
+  // this jQuery script is used to transform the side menu bar and allow for a smooth animation
+    jQuery.fn.clickToggle = function(a, b) {
+      var ab = [b, a];
+      return this.on("click", function() {
+        ab[this._tog ^= 1].call(this);
+      });
+    };
+
+    $('#instructiontoggle').clickToggle(function() {
+      document.getElementById('instructioncont').style.transform = "translateX(-49vh)";
+      document.getElementById('instructioncont').style.moztransform = "translateX(-49vh)";
+      document.getElementById('instructiontoggle').style.transform = "scaleX(-1)"
+      document.getElementById('instructiontoggle').style.moztransform = "scaleX(-1)"
+    }, function() {
+      document.getElementById('instructioncont').style.transform = "translateX(0)";
+      document.getElementById('instructiontoggle').style.transform = "scaleX(1)"
+      document.getElementById('instructioncont').style.moztransform = "translateX(0)";
+      document.getElementById('instructiontoggle').style.moztransform = "scaleX(1)"
+    });
+  </script>
+</body>
+
+</html>
